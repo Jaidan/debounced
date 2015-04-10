@@ -7,8 +7,8 @@ typedef void (*debfuncptr)(int);
 class Debounced 
 {
   public:
-    Debounced(const int pin, debfuncptr callback);
-    Debounced(const int pin, debfuncptr callback, int debounceDelay);
+    Debounced(const uint8_t pin, debfuncptr callback);
+    Debounced(const uint8_t pin, debfuncptr callback, uint8_t debounceDelay);
     void readButton();
   private:
     int _pin;
